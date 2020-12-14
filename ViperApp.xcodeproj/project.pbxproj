@@ -9,12 +9,18 @@
 /* Begin PBXBuildFile section */
 		EB0FB7492585975D0057BE1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0FB7482585975D0057BE1C /* AppDelegate.swift */; };
 		EB0FB74B2585975D0057BE1C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0FB74A2585975D0057BE1C /* SceneDelegate.swift */; };
-		EB0FB74D2585975D0057BE1C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0FB74C2585975D0057BE1C /* ViewController.swift */; };
-		EB0FB7502585975D0057BE1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB0FB74E2585975D0057BE1C /* Main.storyboard */; };
 		EB0FB752258597600057BE1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB0FB751258597600057BE1C /* Assets.xcassets */; };
 		EB0FB755258597600057BE1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB0FB753258597600057BE1C /* LaunchScreen.storyboard */; };
 		EB0FB760258597610057BE1C /* ViperAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0FB75F258597610057BE1C /* ViperAppTests.swift */; };
 		EB0FB76B258597610057BE1C /* ViperAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0FB76A258597610057BE1C /* ViperAppUITests.swift */; };
+		EB0FB7862585978C0057BE1C /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0FB77F2585978C0057BE1C /* HomePresenter.swift */; };
+		EB0FB7872585978C0057BE1C /* HomeLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0FB7802585978C0057BE1C /* HomeLocalDataManager.swift */; };
+		EB0FB7882585978C0057BE1C /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0FB7812585978C0057BE1C /* HomeProtocols.swift */; };
+		EB0FB7892585978C0057BE1C /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0FB7822585978C0057BE1C /* HomeInteractor.swift */; };
+		EB0FB78A2585978C0057BE1C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0FB7832585978C0057BE1C /* HomeView.swift */; };
+		EB0FB78B2585978C0057BE1C /* HomeRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0FB7842585978C0057BE1C /* HomeRemoteDataManager.swift */; };
+		EB0FB78C2585978C0057BE1C /* HomeWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0FB7852585978C0057BE1C /* HomeWireFrame.swift */; };
+		EB0FB794258597B60057BE1C /* HomeView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB0FB793258597B60057BE1C /* HomeView.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +44,6 @@
 		EB0FB7452585975D0057BE1C /* ViperApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViperApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB0FB7482585975D0057BE1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB0FB74A2585975D0057BE1C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EB0FB74C2585975D0057BE1C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EB0FB74F2585975D0057BE1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EB0FB751258597600057BE1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB0FB754258597600057BE1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB0FB756258597600057BE1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +53,14 @@
 		EB0FB766258597610057BE1C /* ViperAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViperAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB0FB76A258597610057BE1C /* ViperAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperAppUITests.swift; sourceTree = "<group>"; };
 		EB0FB76C258597610057BE1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB0FB77F2585978C0057BE1C /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		EB0FB7802585978C0057BE1C /* HomeLocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLocalDataManager.swift; sourceTree = "<group>"; };
+		EB0FB7812585978C0057BE1C /* HomeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocols.swift; sourceTree = "<group>"; };
+		EB0FB7822585978C0057BE1C /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		EB0FB7832585978C0057BE1C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		EB0FB7842585978C0057BE1C /* HomeRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRemoteDataManager.swift; sourceTree = "<group>"; };
+		EB0FB7852585978C0057BE1C /* HomeWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWireFrame.swift; sourceTree = "<group>"; };
+		EB0FB793258597B60057BE1C /* HomeView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeView.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +113,7 @@
 			children = (
 				EB0FB7482585975D0057BE1C /* AppDelegate.swift */,
 				EB0FB74A2585975D0057BE1C /* SceneDelegate.swift */,
-				EB0FB74C2585975D0057BE1C /* ViewController.swift */,
-				EB0FB74E2585975D0057BE1C /* Main.storyboard */,
+				EB0FB77B258597720057BE1C /* HomeModule */,
 				EB0FB751258597600057BE1C /* Assets.xcassets */,
 				EB0FB753258597600057BE1C /* LaunchScreen.storyboard */,
 				EB0FB756258597600057BE1C /* Info.plist */,
@@ -126,6 +137,21 @@
 				EB0FB76C258597610057BE1C /* Info.plist */,
 			);
 			path = ViperAppUITests;
+			sourceTree = "<group>";
+		};
+		EB0FB77B258597720057BE1C /* HomeModule */ = {
+			isa = PBXGroup;
+			children = (
+				EB0FB793258597B60057BE1C /* HomeView.storyboard */,
+				EB0FB7832585978C0057BE1C /* HomeView.swift */,
+				EB0FB77F2585978C0057BE1C /* HomePresenter.swift */,
+				EB0FB7802585978C0057BE1C /* HomeLocalDataManager.swift */,
+				EB0FB7812585978C0057BE1C /* HomeProtocols.swift */,
+				EB0FB7822585978C0057BE1C /* HomeInteractor.swift */,
+				EB0FB7842585978C0057BE1C /* HomeRemoteDataManager.swift */,
+				EB0FB7852585978C0057BE1C /* HomeWireFrame.swift */,
+			);
+			path = HomeModule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +259,7 @@
 			files = (
 				EB0FB755258597600057BE1C /* LaunchScreen.storyboard in Resources */,
 				EB0FB752258597600057BE1C /* Assets.xcassets in Resources */,
-				EB0FB7502585975D0057BE1C /* Main.storyboard in Resources */,
+				EB0FB794258597B60057BE1C /* HomeView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +284,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB0FB74D2585975D0057BE1C /* ViewController.swift in Sources */,
 				EB0FB7492585975D0057BE1C /* AppDelegate.swift in Sources */,
+				EB0FB7872585978C0057BE1C /* HomeLocalDataManager.swift in Sources */,
 				EB0FB74B2585975D0057BE1C /* SceneDelegate.swift in Sources */,
+				EB0FB7882585978C0057BE1C /* HomeProtocols.swift in Sources */,
+				EB0FB78A2585978C0057BE1C /* HomeView.swift in Sources */,
+				EB0FB78B2585978C0057BE1C /* HomeRemoteDataManager.swift in Sources */,
+				EB0FB7862585978C0057BE1C /* HomePresenter.swift in Sources */,
+				EB0FB7892585978C0057BE1C /* HomeInteractor.swift in Sources */,
+				EB0FB78C2585978C0057BE1C /* HomeWireFrame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +328,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		EB0FB74E2585975D0057BE1C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EB0FB74F2585975D0057BE1C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EB0FB753258597600057BE1C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
