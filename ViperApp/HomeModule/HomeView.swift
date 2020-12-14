@@ -11,6 +11,9 @@ import UIKit
 
 class HomeView: UIViewController {
 
+    @IBOutlet weak var homeTable: UITableView!
+    @IBOutlet weak var homeActivity: UIActivityIndicatorView!
+    
     // MARK: Properties
     var presenter: HomePresenterProtocol?
 

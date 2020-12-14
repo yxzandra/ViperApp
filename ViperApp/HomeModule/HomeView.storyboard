@@ -15,10 +15,51 @@
                     <view key="view" contentMode="scaleToFill" id="f49-RM-JWs">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7w2-25-QVQ">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="T5G-VC-Sa4">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="T5G-VC-Sa4" id="6kH-dz-2vF">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="nXg-Ie-4ne" id="gam-fG-9zH"/>
+                                    <outlet property="delegate" destination="nXg-Ie-4ne" id="cRr-oh-uGx"/>
+                                </connections>
+                            </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="LYU-Eo-SCD">
+                                <rect key="frame" x="188.5" y="474" width="37" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="30P-1G-hpi"/>
+                                    <constraint firstAttribute="width" constant="37" id="yRW-oM-NJa"/>
+                                </constraints>
+                                <color key="color" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="k4p-r9-jdx"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LYU-Eo-SCD" firstAttribute="centerX" secondItem="f49-RM-JWs" secondAttribute="centerX" id="5Ch-VQ-Hqs"/>
+                            <constraint firstItem="7w2-25-QVQ" firstAttribute="centerX" secondItem="f49-RM-JWs" secondAttribute="centerX" id="6Sw-3q-w8D"/>
+                            <constraint firstItem="LYU-Eo-SCD" firstAttribute="top" secondItem="k4p-r9-jdx" secondAttribute="top" constant="386" id="CyI-nX-N8W"/>
+                            <constraint firstItem="7w2-25-QVQ" firstAttribute="trailing" secondItem="k4p-r9-jdx" secondAttribute="trailing" id="EWX-aM-fsN"/>
+                            <constraint firstItem="7w2-25-QVQ" firstAttribute="leading" secondItem="k4p-r9-jdx" secondAttribute="leading" id="FgS-Sh-CTw"/>
+                            <constraint firstItem="7w2-25-QVQ" firstAttribute="top" secondItem="k4p-r9-jdx" secondAttribute="top" id="Pf9-Ie-xwH"/>
+                            <constraint firstAttribute="bottom" secondItem="7w2-25-QVQ" secondAttribute="bottom" id="zkg-fM-Prh"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="h9z-Wb-aLC"/>
+                    <connections>
+                        <outlet property="homeActivity" destination="LYU-Eo-SCD" id="XA0-zh-rM0"/>
+                        <outlet property="homeTable" destination="7w2-25-QVQ" id="pRk-uW-2Yg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jx8-93-RtW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

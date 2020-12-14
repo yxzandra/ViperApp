@@ -15,6 +15,9 @@ class HomeInteractor: HomeInteractorInputProtocol {
     var localDatamanager: HomeLocalDataManagerInputProtocol?
     var remoteDatamanager: HomeRemoteDataManagerInputProtocol?
 
+    func interactorGetData() {
+        remoteDatamanager?.externalGetData()
+    }
 }
 
 extension HomeInteractor: HomeRemoteDataManagerOutputProtocol {
