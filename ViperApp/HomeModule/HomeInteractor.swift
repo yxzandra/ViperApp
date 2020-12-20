@@ -22,4 +22,7 @@ class HomeInteractor: HomeInteractorInputProtocol {
 
 extension HomeInteractor: HomeRemoteDataManagerOutputProtocol {
     // TODO: Implement use case methods
+    func returnData(with category: [CategoryEntity]) {
+        print("Estoy obteniendo estos datos: \(category)")
+    }
 }
