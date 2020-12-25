@@ -32,6 +32,19 @@ extension HomeView: HomeViewProtocol {
         self.arrayViewURL = receivedData
         homeTable.reloadData()
     }
+
+    func loadActivity() {
+        DispatchQueue.main.async {
+            self.homeActivity.startAnimating()
+        }
+    }
+
+    func stopAndHideActivity() {
+        DispatchQueue.main.async {
+            self.homeActivity.stopAnimating()
+            self.homeActivity.hidesWhenStopped = true
+        }
+    }
 }
 
 extension HomeView: UITableViewDataSource {

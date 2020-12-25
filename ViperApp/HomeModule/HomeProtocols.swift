@@ -13,6 +13,8 @@ protocol HomeViewProtocol: class {
     // PRESENTER -> VIEW
     var presenter: HomePresenterProtocol? { get set }
     func presenterPushDataView(receivedData: [DatoURLEntity])
+    func loadActivity()
+    func stopAndHideActivity()
 }
 
 protocol HomeWireFrameProtocol: class {
