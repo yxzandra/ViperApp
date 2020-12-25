@@ -24,6 +24,7 @@ protocol DetailPresenterProtocol: class {
     var view: DetailViewProtocol? { get set }
     var interactor: DetailInteractorInputProtocol? { get set }
     var wireFrame: DetailWireFrameProtocol? { get set }
+    var datoURLRecibed: DatoURLEntity? { get set }
     
     func viewDidLoad()
 }

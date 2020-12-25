@@ -8,18 +8,17 @@
 
 import Foundation
 
-class DetailPresenter  {
+class DetailPresenter: DetailPresenterProtocol {
+    var datoURLRecibed: DatoURLEntity?
     
     // MARK: Properties
     weak var view: DetailViewProtocol?
     var interactor: DetailInteractorInputProtocol?
     var wireFrame: DetailWireFrameProtocol?
-    
-}
 
-extension DetailPresenter: DetailPresenterProtocol {
     // TODO: implement presenter methods
     func viewDidLoad() {
+        print("Cargue el detalle: \(datoURLRecibed?.datoURL ?? "")")
     }
 }
 
