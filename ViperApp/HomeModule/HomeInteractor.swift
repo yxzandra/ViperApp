@@ -31,5 +31,6 @@ extension HomeInteractor: HomeRemoteDataManagerOutputProtocol {
         }
         print("Le paso al presenter: \(self.arrayURL)")
         // PASARLE LOS DATOS AL PRESENTER
+        presenter?.interactorPushDataPresenter(receivedData: arrayURL)
     }
 }
