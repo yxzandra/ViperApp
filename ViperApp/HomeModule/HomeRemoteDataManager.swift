@@ -12,14 +12,14 @@ import Alamofire
 class HomeRemoteDataManager:HomeRemoteDataManagerInputProtocol {
 
     var remoteRequestHandler: HomeRemoteDataManagerOutputProtocol?
-    var getUrl = [CategoryEntity]()
+    var getUrl = [CategoryResponse]()
 
     func externalGetData() {
         AF.request("https://cfeapps.com/wp-json/wp/v2/categories", method: .get).responseJSON { response in
             if response.response?.statusCode == 200 {
                 do {
                     let decoder = JSONDecoder()
-                    self.getUrl =  try decoder.decode([CategoryEntity].self, from: response.data!)
+                    self.getUrl =  try decoder.decode([CategoryResponse].self, from: response.data!)
                     self.remoteRequestHandler?.returnData(with: self.getUrl)
                 } catch {
                     print("No se pudo parsear el archivo, error: \(error.localizedDescription)")

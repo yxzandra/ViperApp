@@ -1,5 +1,5 @@
 //
-//  CategoryEntity.swift
+//  CategoryResponse.swift
 //  ViperApp
 //
 //  Created by Yxzandra Cordero on 14-12-20.
@@ -7,8 +7,8 @@
 
 import Foundation
 
-// MARK: - CategoryEntity
-struct CategoryEntity: Codable {
+// MARK: - CategoryResponse
+struct CategoryResponse: Codable {
     var id: Int
     var links: Links
 

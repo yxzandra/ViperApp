@@ -24,7 +24,8 @@
 		EB0FB78B2585978C0057BE1C /* HomeRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0FB7842585978C0057BE1C /* HomeRemoteDataManager.swift */; };
 		EB0FB78C2585978C0057BE1C /* HomeWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0FB7852585978C0057BE1C /* HomeWireFrame.swift */; };
 		EB0FB794258597B60057BE1C /* HomeView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB0FB793258597B60057BE1C /* HomeView.storyboard */; };
-		EB6D9CF3258831830015EE52 /* CategoryEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6D9CF2258831830015EE52 /* CategoryEntity.swift */; };
+		EB13AF4125963070002D5E24 /* DatoURLEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB13AF4025963070002D5E24 /* DatoURLEntity.swift */; };
+		EB6D9CF3258831830015EE52 /* CategoryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6D9CF2258831830015EE52 /* CategoryResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,7 +73,8 @@
 		EB0FB7842585978C0057BE1C /* HomeRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRemoteDataManager.swift; sourceTree = "<group>"; };
 		EB0FB7852585978C0057BE1C /* HomeWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWireFrame.swift; sourceTree = "<group>"; };
 		EB0FB793258597B60057BE1C /* HomeView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeView.storyboard; sourceTree = "<group>"; };
-		EB6D9CF2258831830015EE52 /* CategoryEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryEntity.swift; sourceTree = "<group>"; };
+		EB13AF4025963070002D5E24 /* DatoURLEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatoURLEntity.swift; sourceTree = "<group>"; };
+		EB6D9CF2258831830015EE52 /* CategoryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryResponse.swift; sourceTree = "<group>"; };
 		FB832F93F631A8E2263D8B71 /* Pods_ViperAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViperAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD47B71E044C38C08A8D5233 /* Pods-ViperApp-ViperAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperApp-ViperAppUITests.release.xcconfig"; path = "Target Support Files/Pods-ViperApp-ViperAppUITests/Pods-ViperApp-ViperAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -192,7 +194,8 @@
 				EB0FB7822585978C0057BE1C /* HomeInteractor.swift */,
 				EB0FB7842585978C0057BE1C /* HomeRemoteDataManager.swift */,
 				EB0FB7852585978C0057BE1C /* HomeWireFrame.swift */,
-				EB6D9CF2258831830015EE52 /* CategoryEntity.swift */,
+				EB6D9CF2258831830015EE52 /* CategoryResponse.swift */,
+				EB13AF4025963070002D5E24 /* DatoURLEntity.swift */,
 			);
 			path = HomeModule;
 			sourceTree = "<group>";
@@ -441,9 +444,10 @@
 				EB0FB7882585978C0057BE1C /* HomeProtocols.swift in Sources */,
 				EB0FB78A2585978C0057BE1C /* HomeView.swift in Sources */,
 				EB0FB78B2585978C0057BE1C /* HomeRemoteDataManager.swift in Sources */,
-				EB6D9CF3258831830015EE52 /* CategoryEntity.swift in Sources */,
+				EB6D9CF3258831830015EE52 /* CategoryResponse.swift in Sources */,
 				EB0FB7862585978C0057BE1C /* HomePresenter.swift in Sources */,
 				EB0FB7892585978C0057BE1C /* HomeInteractor.swift in Sources */,
+				EB13AF4125963070002D5E24 /* DatoURLEntity.swift in Sources */,
 				EB0FB78C2585978C0057BE1C /* HomeWireFrame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

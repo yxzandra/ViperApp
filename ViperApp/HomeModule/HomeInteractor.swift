@@ -14,6 +14,7 @@ class HomeInteractor: HomeInteractorInputProtocol {
     weak var presenter: HomeInteractorOutputProtocol?
     var localDatamanager: HomeLocalDataManagerInputProtocol?
     var remoteDatamanager: HomeRemoteDataManagerInputProtocol?
+    var arrayURL = [DatoURLEntity]()
 
     func interactorGetData() {
         remoteDatamanager?.externalGetData()
@@ -21,8 +22,14 @@ class HomeInteractor: HomeInteractorInputProtocol {
 }
 
 extension HomeInteractor: HomeRemoteDataManagerOutputProtocol {
-    // TODO: Implement use case methods
-    func returnData(with category: [CategoryEntity]) {
+    func returnData(with category: [CategoryResponse]) {
+        //EL INTERACTOR DEBE ENVIARLE LOS DATOS AL PRESENTER
         print("Estoy obteniendo estos datos: \(category)")
+        for url in category {
+            let datoUrl = DatoURLEntity(datoURL: url.links.linksSelf.first?.href ?? "")
+            arrayURL.append(datoUrl)
+        }
+        print("Le paso al presenter: \(self.arrayURL)")
+        // PASARLE LOS DATOS AL PRESENTER
     }
 }
