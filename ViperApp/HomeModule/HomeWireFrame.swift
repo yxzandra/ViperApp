@@ -38,10 +38,13 @@ class HomeWireFrame: HomeWireFrameProtocol {
         return UIStoryboard(name: "HomeView", bundle: Bundle.main)
     }
 
-    func presentNewViewDetail(from view: UIViewController, withData: DatoURLEntity) {
+    func presentNewViewDetail(from view: HomeViewProtocol, withData: DatoURLEntity) {
         //CREAR NUEVO MÓDULO E INSTANCIAR
         let newDetailView = DetailWireFrame.createDetailModule(with: withData)
-        view.navigationController?.pushViewController(newDetailView, animated: true)
+
+        if let viewSource = view as? UIViewController {
+            viewSource.navigationController?.pushViewController(newDetailView, animated: true)
+        }
     }
     
 }

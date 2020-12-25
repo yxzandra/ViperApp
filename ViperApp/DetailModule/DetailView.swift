@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 class DetailView: UIViewController {
+    
     @IBOutlet weak var lblURL: UILabel!
     
     // MARK: Properties
@@ -26,4 +27,8 @@ class DetailView: UIViewController {
 
 extension DetailView: DetailViewProtocol {
     // TODO: implement view output methods
+
+    func showDataInLabel(data: DatoURLEntity) {
+        lblURL.text = data.datoURL
+    }
 }

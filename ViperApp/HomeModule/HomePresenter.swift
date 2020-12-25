@@ -18,10 +18,15 @@ class HomePresenter  {
 }
 
 extension HomePresenter: HomePresenterProtocol {
+
     // TODO: implement presenter methods
     func viewDidLoad() {
         interactor?.interactorGetData()
         view?.loadActivity()
+    }
+
+    func showDetailView(with data: DatoURLEntity) {
+        wireFrame?.presentNewViewDetail(from: view!, withData: data)
     }
 }
 

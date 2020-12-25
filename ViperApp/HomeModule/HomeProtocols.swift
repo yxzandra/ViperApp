@@ -20,7 +20,7 @@ protocol HomeViewProtocol: class {
 protocol HomeWireFrameProtocol: class {
     // PRESENTER -> WIREFRAME
     static func createHomeModule() -> UIViewController
-    func presentNewViewDetail(from view: UIViewController, withData: DatoURLEntity)
+    func presentNewViewDetail(from view: HomeViewProtocol, withData: DatoURLEntity)
 }
 
 protocol HomePresenterProtocol: class {
@@ -30,6 +30,7 @@ protocol HomePresenterProtocol: class {
     var wireFrame: HomeWireFrameProtocol? { get set }
     
     func viewDidLoad()
+    func showDetailView(with data: DatoURLEntity)
 }
 
 protocol HomeInteractorOutputProtocol: class {

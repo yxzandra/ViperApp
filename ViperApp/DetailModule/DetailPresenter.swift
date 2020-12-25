@@ -18,7 +18,9 @@ class DetailPresenter: DetailPresenterProtocol {
 
     // TODO: implement presenter methods
     func viewDidLoad() {
-        print("Cargue el detalle: \(datoURLRecibed?.datoURL ?? "")")
+        if let dataRecibed = datoURLRecibed {
+            view?.showDataInLabel(data: dataRecibed)
+        }
     }
 }
 
