@@ -27,6 +27,7 @@ class HomeView: UIViewController {
 }
 
 extension HomeView: HomeViewProtocol {
+
     // TODO: implement view output methods
     func presenterPushDataView(receivedData: [DatoURLEntity]) {
         self.arrayViewURL = receivedData
@@ -43,6 +44,12 @@ extension HomeView: HomeViewProtocol {
         DispatchQueue.main.async {
             self.homeActivity.stopAnimating()
             self.homeActivity.hidesWhenStopped = true
+        }
+    }
+
+    func hideTableView(isHide: Bool) {
+        DispatchQueue.main.async {
+            self.homeTable.isHidden = isHide
         }
     }
 }

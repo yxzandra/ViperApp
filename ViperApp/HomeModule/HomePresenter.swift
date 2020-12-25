@@ -22,6 +22,7 @@ extension HomePresenter: HomePresenterProtocol {
     // TODO: implement presenter methods
     func viewDidLoad() {
         interactor?.interactorGetData()
+        view?.hideTableView(isHide: true)
         view?.loadActivity()
     }
 
@@ -34,7 +35,7 @@ extension HomePresenter: HomeInteractorOutputProtocol {
     // TODO: implement interactor output methods
 
     func interactorPushDataPresenter(receivedData: [DatoURLEntity]) {
-        //LE DECIMOS A LA VISTA QUE CARGUE LOS DATOS
+        view?.hideTableView(isHide: false)
         view?.stopAndHideActivity()
         view?.presenterPushDataView(receivedData: receivedData)
     }

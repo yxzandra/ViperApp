@@ -15,6 +15,7 @@ protocol HomeViewProtocol: class {
     func presenterPushDataView(receivedData: [DatoURLEntity])
     func loadActivity()
     func stopAndHideActivity()
+    func hideTableView(isHide: Bool)
 }
 
 protocol HomeWireFrameProtocol: class {

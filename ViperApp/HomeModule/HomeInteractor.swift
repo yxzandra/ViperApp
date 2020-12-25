@@ -23,14 +23,10 @@ class HomeInteractor: HomeInteractorInputProtocol {
 
 extension HomeInteractor: HomeRemoteDataManagerOutputProtocol {
     func returnData(with category: [CategoryResponse]) {
-        //EL INTERACTOR DEBE ENVIARLE LOS DATOS AL PRESENTER
-        print("Estoy obteniendo estos datos: \(category)")
         for url in category {
             let datoUrl = DatoURLEntity(datoURL: url.links.linksSelf.first?.href ?? "")
             arrayURL.append(datoUrl)
         }
-        print("Le paso al presenter: \(self.arrayURL)")
-        // PASARLE LOS DATOS AL PRESENTER
         presenter?.interactorPushDataPresenter(receivedData: arrayURL)
     }
 }

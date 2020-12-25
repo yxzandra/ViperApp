@@ -16,8 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Faf-wL-Ybs">
-                                <rect key="frame" x="20" y="114" width="374" height="77"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Faf-wL-Ybs">
+                                <rect key="frame" x="186.5" y="438" width="41.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -26,8 +26,8 @@
                         <viewLayoutGuide key="safeArea" id="VIQ-04-kUx"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Faf-wL-Ybs" firstAttribute="top" secondItem="VIQ-04-kUx" secondAttribute="top" constant="70" id="Pak-Re-JRI"/>
-                            <constraint firstItem="Faf-wL-Ybs" firstAttribute="centerX" secondItem="89k-DS-pSw" secondAttribute="centerX" id="zHk-KZ-Vvj"/>
+                            <constraint firstItem="Faf-wL-Ybs" firstAttribute="centerY" secondItem="89k-DS-pSw" secondAttribute="centerY" id="9pa-pF-8qu"/>
+                            <constraint firstItem="Faf-wL-Ybs" firstAttribute="centerX" secondItem="89k-DS-pSw" secondAttribute="centerX" id="YR1-zM-xrZ"/>
                         </constraints>
                     </view>
                     <connections>
